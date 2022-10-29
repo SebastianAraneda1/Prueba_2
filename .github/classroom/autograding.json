@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "DTO",
+      "setup": "",
+      "run": "mvn test -Dtest=DTOTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Listas",
+      "setup": "",
+      "run": "mvn test -Dtest=ListasTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ListarAvioneta",
+      "setup": "",
+      "run": "mvn test -Dtest=ListarAvionetaTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ListarAvion",
+      "setup": "",
+      "run": "mvn test -Dtest=ListarAvionTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ListarCarguero",
+      "setup": "",
+      "run": "mvn test -Dtest=ListarCargueroTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Listar Global",
+      "setup": "",
+      "run": "mvn test -Dtest=ListarTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Validaciones",
+      "setup": "",
+      "run": "mvn test -Dtest=ValidacionesTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
