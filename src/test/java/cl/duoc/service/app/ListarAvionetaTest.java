@@ -14,7 +14,7 @@ public class ListarAvionetaTest {
     @Before
     public void setup(){
         Avioneta = new Avioneta();
-        listar = new ListarAvioneta();
+        listar = (IListAvioneta) new ListarAvioneta();
     }
 
     @Test

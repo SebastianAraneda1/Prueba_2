@@ -1,5 +1,5 @@
 
-package cl.duoc.service.app;
+package cl.duoc.service;
 
 public interface IListCarguero {
     
