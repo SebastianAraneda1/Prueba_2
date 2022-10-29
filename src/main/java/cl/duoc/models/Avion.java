@@ -1,8 +1,6 @@
 package cl.duoc.models;
 
-import java.time.LocalDate;
-
-public class Avion {
+public class Avion extends VehiculoAereo{
     private int ID;
     private String DatosExtras;
 
