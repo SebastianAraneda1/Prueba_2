@@ -1,20 +1,20 @@
 package cl.duoc.models;
 
 public class Carguero extends VehiculoAereo{
-    private int ID;
+    private int id;
     private int Tonelaje;
 
     public Carguero(){
-        this.ID = 0;
+        this.id = 0;
         this.Tonelaje = 0;
     }
 
-    public int getID() {
-        return ID;
+    public int getid() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setid(int id) {
+        this.id = id;
     }
 
     public int getTonelaje() {
@@ -23,6 +23,14 @@ public class Carguero extends VehiculoAereo{
 
     public void setTonelaje(int Tonelaje) {
         this.Tonelaje = Tonelaje;
+    }
+
+    public String getId() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String isTonelaje() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }

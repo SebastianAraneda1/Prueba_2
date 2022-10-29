@@ -15,7 +15,7 @@ public class ListarCargueroTest {
     @Before
     public void setup(){
         Carguero = new Carguero();
-        listar = new ListarCarguero();
+        listar = (IListCarguero) new ListarCarguero();
     }
 
     @Test
