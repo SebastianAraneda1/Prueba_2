@@ -19,15 +19,6 @@ public class Avioneta {
         this.fechaultimovuelo = LocalDate.now();
     }
 
-    public Avioneta(int id, String nombre, int horasvoladas, boolean ultrasonico, boolean listoparavolar, LocalDate fechaultimovuelo) {
-        this.id = id;
-        this.nombre = nombre;
-        this.horasvoladas = horasvoladas;
-        this.ultrasonico = ultrasonico;
-        this.listoparavolar = listoparavolar;
-        this.fechaultimovuelo = fechaultimovuelo;
-    }
-
     public int getId() {
         return id;
     }
