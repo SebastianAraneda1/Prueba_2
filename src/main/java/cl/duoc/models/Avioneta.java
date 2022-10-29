@@ -10,7 +10,7 @@ public class Avioneta {
     private boolean listoparavolar;
     private LocalDate fechaultimovuelo;
     
-    public void avioneta(){
+    public void Avioneta(){
         this.id = 0;
         this.nombre = "";
         this.horasvoladas = 0;
