@@ -1,6 +1,7 @@
 
 package cl.duoc.models;
 
+import cl.duoc.utils.Validaciones;
 import java.time.LocalDate;
 
 public class VehiculoAereo {
@@ -8,6 +9,7 @@ public class VehiculoAereo {
     private int HorasVoladas;
     private boolean ListoParaVolar;
     private LocalDate FechaUltimoVuelo;
+    private Validaciones validaciones = new Validaciones();
 
     public VehiculoAereo() {
         this.Nombre = "";
@@ -21,7 +23,11 @@ public class VehiculoAereo {
     }
 
     public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+        if (validaciones.ValidarString(Nombre)){
+            this.Nombre = Nombre;
+        }else{
+            System.out.println("");
+        }
     }
 
     public int getHorasVoladas() {
