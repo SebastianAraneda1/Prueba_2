@@ -35,7 +35,8 @@ public class Pasajero {
         this.email = email;
         this.vetado = vetado;
     }
-
+    
+    
     public int getId() {
         return id;
     }

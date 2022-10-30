@@ -8,10 +8,10 @@ public class Pasaje extends Pasajero{
     private String codigovuelo;
     private int valor;
 
-    public Pasaje(int id, String nombre, LocalDate fechanacimiento, int rut,char dv, int telefono, String email, boolean vetado) {
+    public Pasaje(int id, String nombre, LocalDate fechanacimiento, int rut, char dv, int telefono, String email, boolean vetado) {
         super(id, nombre, fechanacimiento, rut, dv, telefono, email, vetado);
-    }  
-    
+    }
+ 
     public void Pasaje(){
         this.id = 0;
         this.fecha = LocalDate.now();
