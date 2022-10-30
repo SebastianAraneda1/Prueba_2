@@ -7,18 +7,22 @@ public class Pasaje extends Pasajero{
     private LocalDate fecha;
     private String codigovuelo;
     private int valor;
-
-    public Pasaje(int id, String nombre, LocalDate fechanacimiento, int rut, char dv, int telefono, String email, boolean vetado) {
-        super(id, nombre, fechanacimiento, rut, dv, telefono, email, vetado);
-    }
- 
-    public void Pasaje(){
+    
+    public Pasaje(){
+        super();
         this.id = 0;
         this.fecha = LocalDate.now();
         this.codigovuelo = "";
         this.valor = 0;
     }
 
+    public Pasaje(int id, LocalDate fecha, String codigovuelo, int valor) {
+        this.id = id;
+        this.fecha = fecha;
+        this.codigovuelo = codigovuelo;
+        this.valor = valor;
+    }
+    
     public int getId() {
         return id;
     }

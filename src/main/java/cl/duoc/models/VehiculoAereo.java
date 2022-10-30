@@ -11,13 +11,6 @@ public class VehiculoAereo {
     private LocalDate FechaUltimoVuelo;
     private Validaciones validaciones = new Validaciones();
 
-    public VehiculoAereo(String Nombre, int HorasVoladas, boolean ListoParaVolar, LocalDate FechaUltimoVuelo) {
-        this.Nombre = Nombre;
-        this.HorasVoladas = HorasVoladas;
-        this.ListoParaVolar = ListoParaVolar;
-        this.FechaUltimoVuelo = FechaUltimoVuelo;
-    }
-
     public VehiculoAereo() {
         this.Nombre = "";
         this.HorasVoladas = 0;

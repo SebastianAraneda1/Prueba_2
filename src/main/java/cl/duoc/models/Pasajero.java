@@ -3,7 +3,7 @@ package cl.duoc.models;
 import cl.duoc.utils.Validaciones;
 import java.time.LocalDate;
 
-public class Pasajero {
+public class Pasajero{
     private int id;
     private String nombre;
     private LocalDate fechanacimiento;
@@ -24,18 +24,6 @@ public class Pasajero {
         this.email = "";
         this.vetado = false;
     }
-
-    public Pasajero(int id, String nombre, LocalDate fechanacimiento, int rut, char dv, int telefono, String email, boolean vetado) {
-        this.id = id;
-        this.nombre = nombre;
-        this.fechanacimiento = fechanacimiento;
-        this.rut = rut;
-        this.dv = dv;
-        this.telefono = telefono;
-        this.email = email;
-        this.vetado = vetado;
-    }
-    
     
     public int getId() {
         return id;

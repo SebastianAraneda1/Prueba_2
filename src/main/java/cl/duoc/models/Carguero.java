@@ -5,6 +5,7 @@ public class Carguero extends VehiculoAereo{
     private int Tonelaje;
 
     public Carguero(){
+        super();
         this.id = 0;
         this.Tonelaje = 0;
     }

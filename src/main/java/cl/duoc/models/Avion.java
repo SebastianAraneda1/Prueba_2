@@ -5,6 +5,7 @@ public class Avion extends VehiculoAereo{
     private String DatosExtras;
 
     public Avion() {
+        super();
         this.id = 0;
         this.DatosExtras = "";
     }
