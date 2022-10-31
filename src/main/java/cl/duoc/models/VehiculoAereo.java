@@ -9,7 +9,7 @@ public class VehiculoAereo {
     private int HorasVoladas;
     private boolean ListoParaVolar;
     private LocalDate FechaUltimoVuelo;
-    private Validaciones validaciones = new Validaciones();
+    private final Validaciones validaciones = new Validaciones();
 
     public VehiculoAereo() {
         this.Nombre = "";
@@ -23,7 +23,7 @@ public class VehiculoAereo {
     }
 
     public void setNombre(String Nombre) {
-        if (validaciones.ValidarString(Nombre)){
+        if (validaciones.ValidarString(5, Nombre)){
             this.Nombre = Nombre;
         }else{
             System.out.println("");

@@ -19,7 +19,7 @@ public class ListarTest {
     public void setup(){
         avion = new Avion();
         avioneta = new Avioneta();
-        listar = new Listar();
+        listar = (IList<VehiculoAereo>) new Listar();
         id = 0;
     }
 

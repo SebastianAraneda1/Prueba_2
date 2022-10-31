@@ -3,8 +3,6 @@ package cl.duoc.utils;
 import org.junit.Test;
 import org.junit.Assert;
 
-import cl.duoc.utils.Validaciones;
-
 public class ValidacionesTest {
     
     @Test
@@ -12,11 +10,11 @@ public class ValidacionesTest {
         Validaciones v = new Validaciones();
         System.out.println("====================");
         System.out.println("Validaciones.ValidarString(5, 'adsf') Debe ser Falso");
-        System.out.println("Resultado: "+ (Validaciones.ValidarString(5, "adsf") ? "Verdadero" : "Falso)"));
+        System.out.println("Resultado: "+ (v.ValidarString(5, "adsf") ? "Verdadero" : "Falso)"));
         System.out.println("====================");
         Assert.assertEquals(
             false,
-            Validaciones.ValidarString(5, "adsf")
+            v.ValidarString(5, "adsf")
         );
     }
 }

@@ -1,5 +1,7 @@
 package cl.duoc.models;
 
+import java.time.LocalDate;
+
 public class Avion extends VehiculoAereo{
     private int id;
     private String DatosExtras;
@@ -10,6 +12,17 @@ public class Avion extends VehiculoAereo{
         this.DatosExtras = "";
     }
 
+    public Avion(int id, String DatosExtras) {
+        this.id = id;
+        this.DatosExtras = DatosExtras;
+    }
+
+    public Avion(String Nombre, int HorasVoladas, boolean ListoParaVolar, LocalDate FechaUltimoVuelo, String DatosExtras) {
+        super(Nombre, HorasVoladas, ListoParaVolar, FechaUltimoVuelo);
+        this.id = id;
+        this.DatosExtras = DatosExtras;
+    }
+    
     public int getid() {
         return id;
     }

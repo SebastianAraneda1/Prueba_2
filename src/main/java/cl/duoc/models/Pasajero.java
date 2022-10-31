@@ -2,6 +2,7 @@ package cl.duoc.models;
 
 import cl.duoc.utils.Validaciones;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Pasajero{
     private int id;
@@ -54,10 +55,8 @@ public class Pasajero{
     }
 
     public void setRut(int rut) {
-        if(validar.validarRut(rut, this.dv)){
-            this.rut = rut;
-            setDv(dv);
-        }
+        this.rut = rut;
+            
     }
 
     public char getDv() {
@@ -73,11 +72,15 @@ public class Pasajero{
     }
 
     public void setTelefono(int telefono) {
-        String tel = Integer.toString(telefono);
-        if(tel.length() >= 8 && tel.substring(0, 2).equals("56")){
-            this.telefono = telefono;
-        }else{
-            System.out.println("Debe empezar con 56 y tener 8 caracteres minimo");
+        try{
+            String tel = Integer.toString(telefono);
+            if(tel.length() == 9){
+                this.telefono = telefono;
+            }else{
+                System.out.println("Debe empezar con 56 y tener 8 caracteres minimo");
+            }
+        }catch(Exception e){
+            
         }
     }
 
@@ -97,6 +100,14 @@ public class Pasajero{
 
     public void setVetado(boolean vetado) {
         this.vetado = vetado;
+    }
+    
+    public  LocalDate formatearFecha ( String fecha ) {
+        LocalDate fechaFormateada;
+        DateTimeFormatter formatoDeEntrada = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        fechaFormateada = LocalDate.parse(fecha, formatoDeEntrada);
+        //System.out.println(fechaFormateada);
+        return fechaFormateada;
     }
         
 }
