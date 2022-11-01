@@ -36,6 +36,7 @@ public class App
         
         while (continuar == true){
             if(!registro){
+                p.setId(p.crearId());
                 System.out.println("ingrese nombre: ");
                 String nombre = sn.next();
                 if(v.ValidarString(3, nombre)){
@@ -59,7 +60,8 @@ public class App
                             p.setEmail(email);            
                             vu.setSuscripcion("Gold");
                             vu.setNumerovuelo(2);
-                            System.out.println("\n Nombre pasajero: "+p.getNombre()+
+                            System.out.println("\n ID: "+p.getId()+
+                                    "\n Nombre pasajero: "+p.getNombre()+
                                     "\n RUT: "+p.getRut()+"-"+p.getDv()+
                                     "\n Fecha de nacimiento: "+p.getFechanacimiento()+
                                     "\n Telefono: "+p.getTelefono()+

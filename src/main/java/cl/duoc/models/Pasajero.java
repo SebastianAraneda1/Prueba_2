@@ -108,6 +108,13 @@ public class Pasajero{
         fechaFormateada = LocalDate.parse(fecha, formatoDeEntrada);
         //System.out.println(fechaFormateada);
         return fechaFormateada;
-    }
-        
+    }  
+            
+    int mil  = 1000;
+
+    public int crearId () {
+    int id = mil;
+    mil++;
+    return id;
+    }      
 }

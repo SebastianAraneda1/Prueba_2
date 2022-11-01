@@ -24,4 +24,12 @@ public class Avioneta extends VehiculoAereo{
     public void setUltrasonico(boolean ultrasonico) {
         this.ultrasonico = ultrasonico;
     }
+        
+    int mil  = 1000;
+
+    public int crearId () {
+    int id = mil;
+    mil++;
+    return id;
+    }
 }

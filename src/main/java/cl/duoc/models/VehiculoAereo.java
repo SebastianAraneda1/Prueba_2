@@ -18,6 +18,13 @@ public class VehiculoAereo {
         this.FechaUltimoVuelo = LocalDate.now();
     }
 
+    public VehiculoAereo(String Nombre, int HorasVoladas, boolean ListoParaVolar, LocalDate FechaUltimoVuelo) {
+        this.Nombre = Nombre;
+        this.HorasVoladas = HorasVoladas;
+        this.ListoParaVolar = ListoParaVolar;
+        this.FechaUltimoVuelo = FechaUltimoVuelo;
+    }
+
     public String getNombre() {
         return Nombre;
     }

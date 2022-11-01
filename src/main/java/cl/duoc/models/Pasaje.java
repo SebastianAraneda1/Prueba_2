@@ -54,5 +54,12 @@ public class Pasaje extends Pasajero{
     public void setValor(int valor) {
         this.valor = valor;
     }
-    
+            
+    int mil  = 1000;
+
+    public int crearId () {
+    int id = mil;
+    mil++;
+    return id;
+    }    
 }

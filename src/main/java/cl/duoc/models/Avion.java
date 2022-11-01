@@ -46,5 +46,12 @@ public class Avion extends VehiculoAereo{
     public String getId() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-   
+    
+        int mil  = 1000;
+        
+        public int crearId () {
+    	int id = mil;
+    	mil++;
+    	return id;
+    }
 }

@@ -33,8 +33,13 @@ public class Carguero extends VehiculoAereo{
     public String isTonelaje() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+            
+    int mil  = 1000;
+
+    public int crearId () {
+    int id = mil;
+    mil++;
+    return id;
+    }
 
 }
-    
-
-   
