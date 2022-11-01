@@ -1,15 +1,19 @@
 package cl.duoc.service.app;
 
 import cl.duoc.models.Avion;
+import cl.duoc.service.IListAvion;
 import java.util.List;
 
-public class ListarAvion {
+public class ListarAvion implements IListAvion{
+    
     private List<Avion> listaAvion;
 	
+    @Override
     public void Guardar ( Avion avion ) {
             listaAvion.add(avion);
     }
 
+    @Override
     public void Reemplazar (int indice, Avion avion) {
             for (int i = 0; i < listaAvion.size(); i++) {
                     if (i == indice) {
@@ -18,6 +22,7 @@ public class ListarAvion {
             }
     }
 
+    @Override
     public void Eliminar (int id) {
             for (int i = 0; i < listaAvion.size(); i++) {
                     if ( listaAvion.get(i).getid() == id) {
@@ -26,12 +31,14 @@ public class ListarAvion {
             }
     }
 
+    @Override
     public void Eliminar (Avion avion) {
             if (listaAvion.indexOf(avion) > -1) {
                     listaAvion.remove(avion);
             }
     }
 
+    @Override
     public void Listar() {
             for (int i = 0; i < listaAvion.size(); i++) {
                     System.out.println("Avion " + i + 1 + "\n");
@@ -44,6 +51,7 @@ public class ListarAvion {
             }
     }
 
+    @Override
     public void Listar (int index) {
             System.out.println("Avion");
             System.out.println("Id: " + listaAvion.get(index).getId() + "\n");
