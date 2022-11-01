@@ -2,11 +2,24 @@ package cl.duoc.service.app;
 
 import cl.duoc.models.Avion;
 import cl.duoc.service.IListAvion;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListarAvion implements IListAvion{
     
     private List<Avion> listaAvion;
+
+    public ListarAvion() {
+        this.listaAvion = new ArrayList();
+    }
+
+    public List<Avion> getListaAvion() {
+        return listaAvion;
+    }
+
+    public void setListaAvion(List<Avion> listaAvion) {
+        this.listaAvion = listaAvion;
+    }
 	
     @Override
     public void Guardar ( Avion avion ) {

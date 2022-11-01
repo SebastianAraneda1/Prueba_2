@@ -4,7 +4,7 @@ import cl.duoc.models.Avioneta;
 import java.util.List;
 
 
-public class ListarAvioneta {
+public class ListarAvioneta implements IListAvioneta{
     private List<Avioneta> listaAvioneta;
 	
     public void Guardar ( Avioneta avioneta ) {
