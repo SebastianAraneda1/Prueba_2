@@ -2,15 +2,31 @@
 package cl.duoc.service.app;
 
 import cl.duoc.models.Carguero;
+import cl.duoc.service.IListCarguero;
+import java.util.ArrayList;
 import java.util.List;
 
-public class ListarCarguero {
+public class ListarCarguero implements IListCarguero{
     private List<Carguero> listaCarguero;
-	
+
+    public ListarCarguero() {
+        this.listaCarguero = new ArrayList();
+    }
+
+    public List<Carguero> getListaCarguero() {
+        return listaCarguero;
+    }
+
+    public void setListaCarguero(List<Carguero> listaCarguero) {
+        this.listaCarguero = listaCarguero;
+    }
+    	
+    @Override
     public void Guardar ( Carguero carguero ) {
             listaCarguero.add(carguero);
     }
 
+    @Override
     public void Reemplazar (int indice, Carguero carguero) {
             for (int i = 0; i < listaCarguero.size(); i++) {
                     if (i == indice) {
@@ -19,6 +35,7 @@ public class ListarCarguero {
             }
     }
 
+    @Override
     public void Eliminar (int id) {
             for (int i = 0; i < listaCarguero.size(); i++) {
                     if (listaCarguero.get(i).getid() == id){
@@ -27,12 +44,14 @@ public class ListarCarguero {
             }
     }
 
+    @Override
     public void Eliminar (Carguero carguero) {
             if ( listaCarguero.indexOf(carguero) > -1) {
                     listaCarguero.remove(carguero);
             }
     }
 
+    @Override
     public void Listar() {
             for (int i = 0; i < listaCarguero.size(); i++) {
                     System.out.println("Carguero " + i + 1 + "\n");
@@ -45,6 +64,7 @@ public class ListarCarguero {
             }
     }
 
+    @Override
     public void Listar (int index) {
             System.out.println("Carguero");
             System.out.println("Id: " + listaCarguero.get(index).getid() + "\n");
