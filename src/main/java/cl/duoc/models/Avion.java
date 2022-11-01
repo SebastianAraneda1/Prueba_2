@@ -47,11 +47,16 @@ public class Avion extends VehiculoAereo{
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
-        int mil  = 1000;
-        
-        public int crearId () {
-    	int id = mil;
-    	mil++;
-    	return id;
+    int mil  = 1000;
+
+    public int crearId () {
+    int id = mil;
+    mil++;
+    return id;
+    }
+    
+    @Override
+    public String toString(){
+        return "El veloz del cielo, #100, ultimo vuelo: 23/05/2022, total de horas: 44, Vuela muy mal";
     }
 }
