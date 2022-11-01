@@ -71,11 +71,7 @@ public class App
                         }
                     }
                 }
-            }// FIN registro
-            else {
-                
-            }
-            
+            }// FIN registro            
         }
     }
 }
